@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header>
+			<a  href="http://www.tothenew.com/">TO THE NEW</a>
+			<span id="hdr"><a href="#">Home</a> <a href ="#">Quick Help</a></span>
+	</header>
+	<hr><br>	
+	<div id="main">
+		<div class="bug">Bug Report</div>
+        <form >
+           <div id="form">
+          	<div class="field">
+          	Title:<span class="star">*</span><br>
+        	<input 	class="box" type="text" name="title"></div>
+        	<div class="field">
+        	Description:<span class="star">*</span><br>
+        	<textarea id="txtbox" cols="45"></textarea></div>
+        	<div class="field">
+        	Operating System:<span class="star">*</span><br>
+        	<select class="box" name="Operating System">
+        		<option value="Windows">Windows</option>
+        		<option value="Ubuntu">Ubuntu</option>
+        		<option value="Mac">Mac</option>
+        		<option value="Fedora">Fedora</option>
+        	</select></div>
+        	<div class="field">
+        	Product:<span class="star">*</span><br>
+        	<select class="box"name="Product">
+        		<option value="Formoid">Formoid</option>
+        		<option value="Caroid">Caroid</option>
+        	</select></div>
+            <div class="field">
+            Version:<span class="star">*</span><br>
+            <input type="text" name="Version"></div>
+            <div class="field">
+            Licence:<br>
+            <input type="radio" name="Licence"value="Free">Free
+            <input type="radio" name="Licence" value="Buis.">Buisness</div>
+            <div class="field">
+            Severity:<br>
+            <select class="box" name="Severity">
+        		<option value="Good">Good</option>
+        		<option value="Bad">Bad</option>
+        		<option value="Worst">Worst</option>
+        	</select></div>
+        	<div class="field">
+        	Attachments:<br>
+            	<input type="file" name="bugreport" accept=".doc,.pdf">
+        	</div>
+
+           </div>
+            <div class="bug"><input id="last" type="submit" value="Send"></div>
+        </form>	
+	</div>
+</body>
+</html>
