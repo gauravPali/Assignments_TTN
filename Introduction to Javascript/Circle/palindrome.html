@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+	String:<input id="in" type="text" name="Palindrome">
+	<button onclick="palin()">Check</button>
+	<script>
+		function palin() {
+			var f=1,str=document.getElementById("in").value;
+			var l=str.length;
+			for(i=0;i<(l-1)/2;i++){
+				if(str[i].toLowerCase()!=str[l-1-i].toLowerCase()){
+					f=0;
+					break;
+				}
+			}
+			if(f)
+				alert("'" +str + "'"+ " is palindrome");
+			else
+				alert("'"+str+"'" +" is not Palindrome");
+		}
+	</script>
+</body>
+</html>
