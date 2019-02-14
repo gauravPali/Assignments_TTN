@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employees</title>
+	<script type="text/javascript" src="Employees.js"></script>
+</head>
+<body> 
+	
+	<form onsubmit="return false">
+		Name   :<input id="f" type="text" name="name" required pattern="[A-Za-z]*"><br>
+		Age   :<input id="s" type="text" name="Age" required pattern="[1-9][0-9]*"><br>
+		Salary:<input  id="t" type="number" name="Salary" required ><br>
+		<button onclick="save()">Submit</button> 
+	</form> 
+
+<!--  	<table>
+		<thead>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Salary</th>
+			<th>D.O.B</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<input id="f" type="text" name="Name" >
+				</td>
+				<td>
+					<input id="s" type="text" pattern="[1-9][0-9]*" name="Age">
+				</td>
+				<td>
+					<input id="t" type="number"  name="Salary">
+				</td>
+				<td>
+					<input id="fo"type="date" name="D.O.B">
+				</td> 	
+			</tr>
+		</tbody>
+	</table> -->
+	<!-- <button onclick="save()">Submit</button> --> 	
+	<button onclick="filtr()">Click It!</button>
+	<button onclick="group()">Group</button>
+	<button onclick="fetch()">Fetch</button>
+	<ul id="two"></ul>	
+	<p id="three"></p>	 
+	<p id="four"></p>
+</body>
+</html>
