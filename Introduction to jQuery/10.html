@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<style>
+		div {
+			width: 7%;
+			margin: auto;
+			background:forestgreen;
+			padding: 5px;
+			border-radius: 1px;
+			position: relative;
+		}
+		p{
+			text-align:
+			center;
+			font-size: 19px;
+			font-family: sans-serif;
+			color: white;
+		}
+		ul{
+			list-style-type: none;
+			width: 7.6%;
+			padding: 0px;
+			background: #f9f9f9;
+            left: 593px;
+            top: 61px;
+            display: none;
+            position: absolute;
+		}
+		li{
+			padding: 8px;
+		}
+		li:hover{
+			background: #3e8e41;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("div").hover(function(){
+				$("ul").show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div><p>Menu</p></div>
+	<ul>
+		
+		<li>Pizza</li>
+		<li>Burger</li>
+		<li>Garlic Bread</li>
+		<li>Wrap</li>
+		<li>Cofee</li>
+	</div>
+	</ul>
+</body>
+</html>

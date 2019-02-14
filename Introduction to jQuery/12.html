@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<style>
+		div{
+			border: 2px solid;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("div").bind("click",function(){
+				//alert(event.target);
+			//	alert(event.currentTarget);
+			if(event.target.nodeName =='LI')
+				event.preventDefaut();
+			else
+				alert(event.target);
+			//alert(event.target.nodeName);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>Item1</li>
+			<li>Item2</li>
+			<li>Item3</li>
+			<li>Item4</li>
+		</ul>
+	</div>
+</body>
+</html>

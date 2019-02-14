@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").bind("click",function(){
+				var txt=$("<strong></strong>").text("To The New");
+				$(this).append(txt);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>BootCamp</p>
+</body>
+</html>
