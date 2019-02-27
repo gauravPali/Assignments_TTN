@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+}
+.block1{
+    background: rgb(229, 229, 227);
+    padding: 2%;
+}
+.block2{	
+	 background: #ebe6e7;
+}
+.block3{
+	background:#B8D500;
+}
+.block4{
+	background: #D3005F;
+	padding: 2%;	
+}
+.hdr{
+	/*border:1px solid;*/
+	position: relative;
+	width: 80%;
+    margin: 0px auto;
+}
+.main{
+	width: 80%;
+	margin: 0px auto;
+	position: relative;
+}
+#link{
+	display: inline-block;	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+}
+.table_main{
+
+	width: 80%;
+	margin:0px auto;
+	padding: 1%;
+}
+a.link{
+	padding-left: 40px;
+	text-decoration: none;
+	color: gray;
+}
+a:first-child {
+	color: red;
+	text-decoration: none;
+}
+img[src="bg-home.jpg"] {
+	width: 100%;	
+}
+div#content{
+	/*border:1px solid;	*/
+	width:30%;	
+	color:gray;
+	display: inline-block;
+	line-height: 1.6;
+}
+p#prdct {
+    margin-top: 41px;
+}
+p#yogurt{
+	color: red;
+	font-size: 25px;
+}
+img[src="yogurt.jpg"]{
+	position: absolute;
+	bottom: 0;	
+	right: 0;
+}
+table{
+	width: 100% ;
+}
+table.mob_view{
+	display: none;
+}
+td{
+	text-align: center;
+	color: white;
+	font-size: 21px;
+}
+.logos{
+	width: 25%;
+	margin: 0px auto;
+	color: white;
+}
+i{
+	padding-left: 5%;
+}
+#footer{
+	font-size: 15px;
+	padding-left: 4%; 	 	
+}
+.hdr_hidden{
+	display: none;
+	position: relative;	
+}
+a.linkk{
+	text-decoration: none;
+	color: gray;
+}
+.img[src="mobile-menu.png"]{
+	float: right;
+}
+.dropdown{
+	float: right;
+}
+.dropdown_content{
+	display: none;	
+	background:  #f1f1f1;	
+}
+.dropdown_content a{
+	display: block;
+	margin-top: 0px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: black;
+}
+.dropdown_content a:hover{
+	background: #ddd;
+}
+.dropdown:hover .dropdown_content{
+	display: block;
+}
+@media only screen and (max-width:645px){
+	.logos{
+		width:40%;
+		margin:0px auto;
+		color: white;
+	}
+}
+@media only screen and (max-width: 640px) {
+		.hdr_show{
+			display: none;
+		}
+		.hdr_hidden{
+			display: block;	
+		}
+		div#content{
+			width: 100%;
+		}
+		img[src="yogurt.jpg"]{
+			position: static;	
+			width: 100%;
+		}
+		
+}
+@media only screen and (max-width: 400px){
+	table.view{
+		display: none;
+	}
+	div.table_main{
+		width: 30%;
+		margin:0 auto;
+	}
+	table.mob_view{
+		width:100%;
+		display: block;
+	}
+}
