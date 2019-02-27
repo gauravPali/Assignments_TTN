@@ -1,0 +1,28 @@
+.frst{
+	border:1px solid black;
+	background: lightblue;
+	border-collapse: collapse;
+	width:70%;
+	margin: 0 auto;
+}
+td{
+	text-align: center;
+	padding: 25px;
+}	
+td.frst{
+	width: 60%;	
+}
+table.scnd{
+	width: 100%;
+}
+td.scnd{
+	border:1px solid black;
+	width:50%;
+	padding: 30px;
+}
+td.thrd{
+	border:1px solid black;
+}
+td.inside_table{
+	padding:11px;	
+}
