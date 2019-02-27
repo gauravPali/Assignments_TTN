@@ -1,0 +1,102 @@
+body{
+	margin:0;
+}
+.wrapper{
+	width: 80%;
+	margin:0 auto;
+}
+.aboutus_content{
+	background: #f8f8f8;
+	padding:12px;
+}
+.aboutus a{
+	text-decoration: none;
+	color: gray	;
+	font-size: 15px;
+}
+.aboutus a::after{
+	content: " | ";
+}
+.social_icon{
+	display: inline-block;
+	float: right;
+	color:green;
+}
+.social_icon i{
+	padding-left: 10px;
+}
+.logo, .contact, .location{
+	display: inline-block;
+}
+.flt{
+	float: right;
+}
+div.navigation{
+	background: green;				
+}
+nav{
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	margin-right: 11px;
+}
+div.banner img{
+	width: 100%;	
+}
+div.banner p{
+	text-align: center;
+	color: white;
+}
+p.head{
+	font-size:42px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+img[alt="banner_image"]{
+	filter: brightness(50%);
+}
+button{
+	padding:10px;
+	border:1px black;
+}
+button.hlt{
+	background: green;
+}
+div.banner{
+	position: relative;
+}
+div.banner_content{
+	position: absolute;	
+	top:195px;
+	left: 17%;
+}
+div.cards{
+	position: absolute;
+	bottom: -129px;
+	left: 110px;	
+	width: 80%;	
+}
+.cards div{
+	display: inline-block;
+	margin-right: -4px;	
+	width: 25%;
+	height: 207px;
+}
+div.local_stu{
+	background:#6647ff;
+}
+div.global_stu{
+	background:#ff5a61;
+}
+div.courses{
+	background:#a7e766;
+}
+div.events{
+	background:#fe7c2b;
+}
+p.card_title{
+	font-size: 24px;
+}
