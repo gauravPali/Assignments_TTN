@@ -1,0 +1,55 @@
+body{
+	margin:0;
+}
+div.container{
+	border:13px solid #f3f3f3;
+	width:72%;
+	margin:0 auto;
+}
+div.wrapper{
+	width:90%;
+	margin:0 auto;
+}
+img[src="Assets/newer_times.jpg"]{
+	float: right;
+}
+div.header{
+	border-bottom: 2px solid #f3f2f3;
+}
+.recent_news {
+    margin-top: 90px;
+}
+div.grid_container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+div.grid_cntnr{
+	display: grid;
+	grid-template-columns: 100%;
+}
+div.blog{
+	margin-top: 60px;
+}
+p.blog_img{
+	text-align: center;
+}
+.social {
+    text-align: center;
+    width: 36%;
+    margin: 0 auto;
+    padding: 44px;
+}
+.icon-spacing{
+	display: inline-block;
+	padding-left: 12px;
+}
+img[src="Assets/img1.png"]{
+	float: left;
+}
+.winners img{
+	width: 49%;
+	margin-right:8px;
+}
+.winners{
+	width: 100%;
+}
