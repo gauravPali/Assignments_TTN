@@ -1,0 +1,495 @@
+body{
+	margin: 0;
+}
+
+/*Header image*/
+.header{
+	background-image: url("img/header-bg.jpg");
+	height: 91px;
+
+}
+
+.wrapper{
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+
+#logo img{
+	position: absolute;
+	top: 22px;
+	border-right: 1px solid #FFF;
+    padding-right: 16px;
+}
+
+/*user sign-in icon*/
+#user{
+	position: absolute;
+	right: 12px;
+	top: 15px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#down-arrow{
+	top: 40px;
+	right: 0;
+    position: absolute;
+    color: #FFF;
+}
+
+/*language selection menu*/
+
+select{
+	position: absolute;
+	top: 39px;
+    left: 20%;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+option{
+	background-color: #F17100;
+	font-weight: bold;
+}
+
+
+/*Section for carousel and center text*/
+
+.carousel{
+	position: relative;
+}
+.carousel img{
+	width: 100%;
+}
+
+.center-text{
+	width: 30%;
+	margin: auto;
+	position: absolute;
+	left: 36%;
+    top: 30%;
+    color: #FFF;
+    text-align: center;
+}
+
+.center-text h1{
+	font-size: 65px;
+	font-weight: bolder;
+	margin: 0;
+}
+
+.center-text a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0;
+	color: #FFF;
+}
+
+.center-text a:hover
+{
+	text-decoration: underline;
+}
+
+.center-text button{
+	width: 39%;
+	height: 48px;
+	border-radius: 24px;
+	color: #FFF;
+	background-color: #F34F0D;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 30px;
+	border: none;
+	cursor: pointer;
+}
+.center-text button:hover{
+	text-decoration: underline;
+}
+
+
+.carousel-text{
+	color: #FFF;
+    position: absolute;
+    bottom: 367px; 
+}
+
+.carousel-text a{
+	text-decoration: none;
+	color: #FFF;
+	font-family: sans-serif;
+	font-weight: bold;
+    font-size: 13px;
+}
+
+.carousel-text a:hover{
+	text-decoration: underline;
+}
+
+
+/*Section for video content and playlist videos*/
+
+.video-content{
+	width: 80%;
+	margin: auto;
+	border:0px solid;
+	box-shadow: 0px 0px 15px 8px #D3D3D3;;
+	position: relative;	
+	margin-bottom: 25px;
+
+}
+
+.play-video{
+	width: 60%;	
+	display: inline-block;	
+	position: relative;
+}
+
+.play-video img{
+	margin-bottom: -60px;
+}
+
+.video-title{
+	position: relative;
+	width: 260px;
+    height: 85px;
+	border:1px solid #FFF;
+	background-color: #FFF;
+	bottom: 105px;
+    left: 51%;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+
+.playlist{	
+	display: inline-block;
+
+}
+
+.playlist ul{
+	list-style-type: none;
+	position: absolute;
+    top: 66px;
+}
+
+.video1{
+	overflow: auto;
+}
+.video1 img{
+	float: left;
+	opacity: 0.6;
+}
+.video1 p{
+	font-weight: bold;
+	color: #768191;	
+}
+
+
+.current-video{
+	overflow: auto;
+}
+.current-video img{
+	filter: unset;
+	float: left;
+}
+.current-video p{
+	font-weight: bold;
+	color: #768191;	
+}
+
+/*Play button for main video using CSS*/
+
+#btn-circle{
+	position: absolute;
+	left: 48%;
+    top: 64%;
+	width: 52px;
+    height: 52px;
+    background-color: orange;
+    border-radius: 46px;
+}
+
+#play-btn{
+	width: 0px;
+    height: 0px;
+    border: 30px solid;
+    border-color: red blue green yellow;
+    border-width: 10px 0px 10px 17px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    left: 36%;
+    top: 30%;
+}
+
+/*Play button for playlist 1, 2 and 3 using CSS*/
+#play-btn1{
+	width: 0px;
+    height: 0px;
+    border: 30px solid;
+    border-color: red blue green yellow;
+    border-width: 10px 0px 10px 17px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    left: 36%;
+    top: 25%;
+}
+
+#btn-circle1{
+	position: absolute;
+	left: 25%;
+    top: 10%;
+	width: 44px;
+    height: 43px;
+    background-color: orange;
+    border-radius: 46px;
+}
+
+#play-btn2{
+	width: 0px;
+    height: 0px;
+    border: 30px solid;
+    border-color: red blue green yellow;
+    border-width: 10px 0px 10px 17px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    left: 36%;
+    top: 25%;
+}
+
+#btn-circle2{
+	position: absolute;
+	left: 25%;
+    top: 43%;
+	width: 44px;
+    height: 43px;
+    background-color: orange;
+    border-radius: 46px;
+}
+
+#play-btn3{
+	width: 0px;
+    height: 0px;
+    border: 30px solid;
+    border-color: red blue green yellow;
+    border-width: 10px 0px 10px 17px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    left: 36%;
+    top: 25%;
+}
+
+#btn-circle3{
+	position: absolute;
+	left: 25%;
+    top: 76%;
+	width: 44px;
+    height: 43px;
+    background-color: orange;
+    border-radius: 46px;
+}
+
+
+
+/*-----2 level navigation--Header menu-----*/
+
+.navigation{
+	position: absolute;
+	left: 44%;
+    top: 32px;
+    z-index: 1;
+}
+
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    width: 150px;
+}
+
+.top-level-menu a 
+{
+	font-weight: bold;
+	font-size: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-menu a:hover{ 
+	color: #000000;
+}
+
+.second-level-menu{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #F76100;
+    opacity: 0.8;
+}
+
+.second-level-menu > li{
+    position: relative;
+    height: 30px;
+}
+
+.second-level-menu > li:hover{
+	background: #F17100;
+}
+
+
+.third-level-menu{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #F76100;
+    opacity: 0.8;
+}
+
+.third-level-menu > li{
+    height: 30px; 
+}
+
+.third-level-menu > li:hover{
+	 background: #F17100; 
+ }
+
+
+
+.top-level-menu li:hover > ul
+{
+    display: inline;
+}
+
+
+/*
+.lang-menu{
+	position: absolute;
+	left:18%;
+	top: 25px;
+
+}
+
+.lang-menu .top-level{
+	 list-style: none;
+}
+
+.lang-menu .top-level a{
+	color: #FFF;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+.lang-menu .top-level ul{
+	position: relative;
+    left: -43%;
+    top: 8px;
+    list-style: none;
+    
+    z-index: 1;
+    display: none;
+}
+
+.lang-menu .top-level ul > li{
+	height: 25px;
+}
+
+.lang-menu .top-level ul > li a:hover{
+	background-color: #F17100;
+	color: black;
+}
+
+#lang-arrow{
+	top: 18px;
+    left: 90px;
+    position:absolute;
+    color: #FFF;
+}
+*/
+
+
+/*Carousel Slider*/
+
+
+@keyframes slider {
+	0%{
+		left:0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left:-100%;
+	}
+	50%{
+		left:-200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+
+#slider{
+	overflow: hidden;
+}
+
+#slider figure img{
+	width: 20%;
+	float: left;
+}
+
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	animation: 15s slider infinite;
+}
+
+.copyright{
+	width: 18%;
+	margin: auto;
+	font-weight: bold;
+	color: #768191;	
+	margin-bottom: 20px;
+}
