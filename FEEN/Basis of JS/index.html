@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="show">
+	<div id="wish">
+	</div>	
+	<p id="demo">
+	</p>
+	<p id="dte">
+	</p>
+</div>
+
+</body>
+</html>
+<script>	
+	var month=['Jan' ,'Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec'];
+	
+	setInterval(function(){
+		var str="";
+		var a= new Date(); 
+		var s=a.getSeconds();
+		var m=a.getMinutes();
+		var h=a.getHours();
+		var date=a.getDate();
+		if(h>=6 && h<12){
+		document.getElementById("wish").innerHTML="Good Morning";
+	}else if(h>=12 && h<17){
+		document.getElementById("wish").innerHTML="Good Afternoon";
+	}
+	else if(h>=17 && h<=20){
+		document.getElementById("wish").innerHTML="Good Evening";
+	}
+	else
+		document.getElementById("wish").innerHTML="Good Night";
+	if(h>=12 && h<24)
+			str="PM";
+		else
+			str="AM";
+	h=h%12;
+	if(h==0){
+		h=12;
+	}
+	h=appendZero(h);
+	m=appendZero(m);
+	s=appendZero(s);
+	date=appendZero(date);	
+	document.getElementById("demo").innerHTML=  h + " : " + m + " : " + s + " "+ str;
+	document.getElementById("dte").innerHTML= date + " " + month[a.getMonth()]+ " " + a.getFullYear();
+		
+	},1000);
+	function appendZero(x){
+		if(x<10)
+			x="0"+x;
+		return x;
+	}
+</script>
